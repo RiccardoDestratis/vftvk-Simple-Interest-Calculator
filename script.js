@@ -9,6 +9,8 @@ function compute()
  var year = new Date().getFullYear()+parseInt(years);
  var amount = (interest + principal)
 
+ if(principal<=0){alert("Enter a positive Number")}
+
 
     document.getElementById("result").innerHTML="If you deposit <mark>"+principal+"</mark>\
     <br\>at an interest rate of <mark>"+rate+"%</mark>\<br\>You will receive an amount of <mark>"+amount+"</mark>,\<br\>in the year <mark>"+year+"</mark>\<br\>"
@@ -21,11 +23,3 @@ function updateRate()
     document.getElementById("rate_val").innerText=rateval;
 }
         
-function hallo(){
-    if (principal.value<=0) {
-
-    alert("Enter a positive Number")}
-
-
-}
-hallo();
