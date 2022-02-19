@@ -9,7 +9,8 @@ function compute()
  var year = new Date().getFullYear()+parseInt(years);
  var amount = (interest + principal)
 
- if(principal<=0){alert("Enter a positive Number")}
+ if(principal<=0){alert("Enter a positive Number")
+document.getElementById("principal").focus();}
 
 
     document.getElementById("result").innerHTML="If you deposit <mark>"+principal+"</mark>\
